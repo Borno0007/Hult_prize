@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Business Learning Hub | EF Hult Prize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><img class="brand-logo" src="hp_logo.webp" alt="Hult Prize logo" /> EF HULT PRIZE</a
+      ><button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <nav class="nav">
+        <a href="index.html">Home</a
+        ><a href="participate.html">Why participate</a
+        ><a class="active" href="hub.html">Learning hub</a
+        ><a class="nav-cta" href="index.html#cta">Bring it here &rarr;</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">The business learning hub</span>
+          <div class="hub-intro">
+            <div>
+              <h1>
+                Build something<br /><span style="color: var(--blue)"
+                  >worth building.</span
+                >
+              </h1>
+            </div>
+            <p>
+              Short, practical lessons for the messy middle between “what if?”
+              and “we made it work.” Learn at your own pace, then put every idea
+              to work.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" style="padding-top: 55px">
+        <div class="container">
+          <div class="progress-card" data-reveal>
+            <div class="progress-top">
+              <strong>Your learning path</strong
+              ><span class="progress-number">0 / 12 complete</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="section-head" data-reveal>
+            <div>
+              <span class="eyebrow">12 practical modules</span>
+              <h2>Choose your next lesson.</h2>
+            </div>
+            <p>
+              Each module is designed to move an idea one honest step forward.
+            </p>
+          </div>
+          <div class="modules"></div>
+        </div>
+      </section>
+    </main>
+    <div class="modal-wrap">
+      <div class="modal">
+        <button class="close-modal" aria-label="Close lesson">&times;</button
+        ><span class="lesson-label"></span>
+        <h2></h2>
+        <div class="lesson-content"></div>
+        <div class="modal-footer">
+          <small>Learn, test, reflect.</small
+          ><button
+            class="button"
+            onclick="document.querySelector('.close-modal').click()"
+          >
+            Close lesson
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 EF Hult Prize Campus Initiative</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a
+          ><a href="participate.html">Why participate</a
+          ><a href="mailto:hultprize@youruniversity.edu">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
